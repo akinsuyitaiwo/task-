@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "tsc",
+    "lint": "eslint src/**/*.ts",
     "start": "node dist/app.js",
     "dev": "nodemon src/app.ts"
   },
