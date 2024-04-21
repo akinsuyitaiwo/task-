@@ -8,11 +8,7 @@ export default class Order extends Model {
   public status!: boolean;
 
 
-  static associate(models: any) {
-    Order.hasOne(models.User, {
-      foreignKey: "orderId"
-    })
-  }
+
 }
 
   Order.init({
@@ -37,6 +33,10 @@ export default class Order extends Model {
       type: DataTypes.STRING,
       allowNull: false
     },
+    active: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: true
+    }
   }, {
     sequelize,
     tableName: 'orders',

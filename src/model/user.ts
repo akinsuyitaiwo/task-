@@ -7,11 +7,6 @@ export default class User extends Model {
   public password!: string;
   public verified!: boolean;
 
-  static associate(models: any) {
-    User.hasMany(models.Order, {
-      foreignKey: "userId"
-    })
-  }
 }
 
   User.init({
