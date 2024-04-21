@@ -10,7 +10,7 @@ const main = async () => {
 		await sequelize.models.Order.bulkCreate(orders);
 
 		console.log("Seeding completed");
-	} catch (error) {
+	} catch (error) { 
 		console.error(error);
 		process.exit(1);
 	}
