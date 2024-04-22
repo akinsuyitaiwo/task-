@@ -28,15 +28,8 @@ const validateSignIn = (signIn: ILogin) => {
 	return userSignIn.validate(signIn, options);
 };
 
-const validatePasswordUpdate = (user: IUser) => {
-	const userPassword = Joi.object({
-		oldPassword: Joi.string().required(),
-		password: Joi.string().min(6).max(36).required(),
-		retypePassword: Joi.ref("password")
-	}).strict();
-	return userPassword.validate(user, options);
-};
+
 
 export {
-	validateSignUp, validateSignIn, validatePasswordUpdate
+	validateSignUp, validateSignIn
 };

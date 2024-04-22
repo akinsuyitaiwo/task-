@@ -64,7 +64,7 @@ export const orders =
           "payment": "card"
         },
         {
-          "id": "a47521d7-9593-4d9a-99f3-b7052a589487",
+          "id": "4dee9dfb-e1f9-491b-88e2-287e3a7c56ea",
           "userId": "2e80b813-f659-456d-93f9-1887917123cb",
           "title": "Order 11",
           "deliveryAdress": "5678 Sample Ave, bariga",
@@ -231,7 +231,7 @@ export const orders =
           "payment": "cash"
         },
         {
-          "id": "0865c785-6c86-41b6-af1e-00b2c9abb5ab",
+          "id": "f177cb99-e0d0-4a9e-9e48-0d8b880f01a4",
           "userId": "df2b862b-bb29-459f-ae70-7fb19cd9a2b9",
           "title": "Order 35",
           "deliveryAdress": "Anambra state",

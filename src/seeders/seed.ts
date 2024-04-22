@@ -1,13 +1,13 @@
 
-import sequelize from "../config/database";
+// import sequelize from "../config/database";
+import models from "../model";
 import { userData } from "./users";
 import { orders } from "./order";
 
 const main = async () => {
 	try {
-		await sequelize.authenticate();
-		await sequelize.models.User.bulkCreate(userData);
-		await sequelize.models.Order.bulkCreate(orders);
+		await models.User.bulkCreate(userData);
+		await models.Order.bulkCreate(orders);
 
 		console.log("Seeding completed");
 	} catch (error) { 
